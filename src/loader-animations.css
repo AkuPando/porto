@@ -1,0 +1,18 @@
+@keyframes loadingPulse {
+  0% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  50% {
+    filter: blur(4px);
+    opacity: 0.6;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.loading-pulse {
+  animation: loadingPulse 1.6s ease-in-out infinite;
+}
