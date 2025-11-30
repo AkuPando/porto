@@ -4,8 +4,8 @@
     opacity: 1;
   }
   50% {
-    filter: blur(4px);
-    opacity: 0.6;
+    filter: blur(2px);
+    opacity: 0.85;
   }
   100% {
     filter: blur(0px);
@@ -14,5 +14,5 @@
 }
 
 .loading-pulse {
-  animation: loadingPulse 1.6s ease-in-out infinite;
+  animation: loadingPulse 1.4s ease-in-out infinite;
 }

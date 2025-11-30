@@ -28,3 +28,11 @@ html {
     font-family: "Poppins", sans-serif;
   }
 }
+
+.animate__delay-2_5s {
+  animation-delay: 2.5s !important;
+}
+
+.animate__delay-3_5s {
+  animation-delay: 3.5s !important;
+}
