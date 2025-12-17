@@ -40,7 +40,7 @@ const Dashboard = () => {
                   "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
                 maskImage:
                   "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
-                // transform: "rotate(-8deg)",
+                transform: "rotate(-8deg)",
               }}
             />
             <div className="animate__animated animate__fadeInUp animate__delay-2_5s">
@@ -82,7 +82,7 @@ const Dashboard = () => {
                   "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
                 maskImage:
                   "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
-                // transform: "rotate(-8deg)",
+                transform: "rotate(-8deg)",
               }}
             />
           </div>
