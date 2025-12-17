@@ -13,19 +13,35 @@ import "remixicon/fonts/remixicon.css";
 import "animate.css";
 import "aos/dist/aos.css";
 
-// Initialize AOS
-AOS.init();
+// Initialize AOS with proper configuration
+AOS.init({
+  once: true,
+  offset: 100,
+  duration: 800,
+  easing: 'ease-out-cubic',
+});
 
-// Initialize Lenis smooth scroll
-const lenis = new Lenis(LENIS_CONFIG);
+// Refresh AOS on Lenis scroll
+document.addEventListener('lenis-raf', () => {
+  AOS.refresh();
+});
 
-// Lenis animation frame
-function raf(time) {
-  lenis.raf(time);
-  document.dispatchEvent(new CustomEvent("lenis-raf"));
+// Initialize Lenis smooth scroll only on non-touch devices
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+let lenis = null;
+
+if (!isTouchDevice) {
+  lenis = new Lenis(LENIS_CONFIG);
+  
+  // Lenis animation frame
+  function raf(time) {
+    lenis.raf(time);
+    document.dispatchEvent(new CustomEvent("lenis-raf"));
+    requestAnimationFrame(raf);
+  }
   requestAnimationFrame(raf);
 }
-requestAnimationFrame(raf);
 
 // Render app
 createRoot(document.getElementById("root")).render(

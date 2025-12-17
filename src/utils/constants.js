@@ -10,9 +10,10 @@ export const NAV_ITEMS = [
 export const FOOTER_LINKS = ["Satu", "Dua", "Tiga"];
 
 export const SOCIAL_LINKS = [
-  { icon: "ri-github-fill", href: "#", label: "GitHub" },
-  { icon: "ri-instagram-fill", href: "#", label: "Instagram" },
-  { icon: "ri-facebook-fill", href: "#", label: "Facebook" },
+  { icon: "ri-github-fill", href: "https://github.com/AkuPando", target: "_blank", rel: "noopener noreferrer", label: "GitHub" },
+  { icon: "ri-instagram-fill", href: "https://www.instagram.com/dsnchntdvan", target: "_blank", rel: "noopener noreferrer", label: "Instagram" },
+  { icon: "ri-facebook-fill", href: "https://www.facebook.com/irvanda.aldo", target: "_blank", rel: "noopener noreferrer", label: "Facebook" },
+  { icon: "ri-whatsapp-fill", href: "https://wa.me/62895323717136", target: "_blank", rel: "noopener noreferrer", label: "WhatsApp" },
 ];
 
 // Lenis configuration

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project = () => {
+const Projects = () => {
   return (
     <div>
       project
@@ -8,4 +8,4 @@ const Project = () => {
   );
 };
 
-export default React.memo(Project);
+export default React.memo(Projects);
