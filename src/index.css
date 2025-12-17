@@ -4,10 +4,6 @@ html, body {
   min-height: 100%;
 }
 
-img {
-  image-orientation: from-image;
-}
-
 html {
   scroll-behavior: auto !important;
 }

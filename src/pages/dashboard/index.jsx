@@ -31,20 +31,17 @@ const Dashboard = () => {
                 client.
               </p>
             </div>
-            <div className="lg:hidden animate__animated animate__fadeInUp animate__delay-3_5s">
-              <img
-                src={DataImage.HeroImage}
-                alt="img"
-                className="w-[65%] rounded-t-full mx-auto mb-5"
-                style={{
-                  WebkitMaskImage:
-                    "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
-                  maskImage:
-                    "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
-                  // transform: "rotate(-8deg)",
-                }}
-              />
-            </div>
+            <img
+              src={DataImage.HeroImage}
+              alt="img"
+              className="lg:hidden w-[65%] rounded-t-full mx-auto mb-5 animate__animated animate__fadeInUp animate__delay-3_5s"
+              style={{
+                WebkitMaskImage:
+                  "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
+                maskImage:
+                  "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
+              }}
+            />
             <div className="animate__animated animate__fadeInUp animate__delay-2_5s">
               <div className="flex items-center gap-6 justify-center lg:justify-normal lg:px-0">
                 <a
@@ -84,7 +81,6 @@ const Dashboard = () => {
                   "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
                 maskImage:
                   "linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)",
-                // transform: "rotate(-8deg)",
               }}
             />
           </div>
