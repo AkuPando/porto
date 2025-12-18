@@ -26,13 +26,8 @@ document.addEventListener('lenis-raf', () => {
   AOS.refresh();
 });
 
-// Initialize Lenis smooth scroll only on non-touch devices
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-let lenis = null;
-
-if (!isTouchDevice) {
-  lenis = new Lenis(LENIS_CONFIG);
+// Initialize Lenis smooth scroll
+const lenis = new Lenis(LENIS_CONFIG);
   
   // Lenis animation frame
   function raf(time) {
@@ -41,7 +36,6 @@ if (!isTouchDevice) {
     requestAnimationFrame(raf);
   }
   requestAnimationFrame(raf);
-}
 
 // Render app
 createRoot(document.getElementById("root")).render(
