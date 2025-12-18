@@ -4,6 +4,10 @@ import Project from "./components/project.jsx";
 import Tools from "./components/Tools.jsx";
 import Contact from "./components/contact.jsx";
 import DataImage from "../../data.js";
+import {
+  RiDownloadLine,
+  RiArrowDownLine,
+} from "@remixicon/react";
 
 const Dashboard = () => {
   return (
@@ -49,7 +53,7 @@ const Dashboard = () => {
                   download="CV_Irvando_Aldo_Renaldy.pdf"
                   className="bg-zinc-800 opacity-75 p-4 rounded-2xl hover:opacity-100"
                 >
-                  My CV<i className="ri-download-line ps-2 ri-lg"></i>
+                  My CV{/* Old: <i className="ri-download-line ps-2 ri-lg"></i> */}<RiDownloadLine size={20} className="inline-block ms-2" />
                 </a>
                 <a
                   href="#project"
@@ -66,7 +70,8 @@ const Dashboard = () => {
                   className="bg-zinc-800 opacity-75 p-4 rounded-2xl hover:opacity-100"
                 >
                   View Projects
-                  <i className="ri-arrow-down-line ps-2 ri-lg"></i>
+                  {/* Old: <i className="ri-arrow-down-line ps-2 ri-lg"></i> */}
+                  <RiArrowDownLine size={20} className="inline-block ms-2" />
                 </a>
               </div>
             </div>

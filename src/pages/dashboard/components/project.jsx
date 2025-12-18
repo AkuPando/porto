@@ -94,7 +94,7 @@ const Project = () => {
                   <button className="relative w-full font-medium py-3 px-6 rounded-full border-2 border-white/20 overflow-hidden group/btn cursor-pointer">
                     <span className="relative z-10 text-white">Lihat Website</span>
                     <div 
-                      className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 pointer-events-none"
+                      className="absolute inset-0 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 pointer-events-none"
                       style={{
                         background: 'linear-gradient(to right, rgb(30,58,95), rgb(212,167,85))',
                       }}

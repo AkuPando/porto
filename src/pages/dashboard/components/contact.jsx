@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import {
+  RiMailLine,
+  RiWhatsappLine,
+  RiMapPinLine,
+} from "@remixicon/react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -79,7 +84,8 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
-                  <i className="ri-mail-line text-xl"></i>
+                  {/* Old: <i className="ri-mail-line text-xl"></i> */}
+                  <RiMailLine size={20} />
                 </div>
                 <div>
                   <p className="text-sm opacity-50">Email</p>
@@ -89,7 +95,8 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
-                  <i className="ri-whatsapp-line text-xl"></i>
+                  {/* Old: <i className="ri-whatsapp-line text-xl"></i> */}
+                  <RiWhatsappLine size={20} />
                 </div>
                 <div>
                   <p className="text-sm opacity-50">Phone</p>
@@ -99,7 +106,8 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
-                  <i className="ri-map-pin-line text-xl"></i>
+                  {/* Old: <i className="ri-map-pin-line text-xl"></i> */}
+                  <RiMapPinLine size={20} />
                 </div>
                 <div>
                   <p className="text-sm opacity-50">Location</p>
@@ -172,7 +180,7 @@ const Contact = () => {
             >
               <span className="relative z-10 text-white">Submit now</span>
               <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                className="absolute inset-0 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
                   background:
                     "linear-gradient(to right, rgb(30,58,95), rgb(212,167,85))",

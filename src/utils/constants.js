@@ -9,11 +9,19 @@ export const NAV_ITEMS = [
 // Footer constants
 export const FOOTER_LINKS = ["Satu", "Dua", "Tiga"];
 
+import {
+  RiGithubFill,
+  RiInstagramFill,
+  RiFacebookFill,
+  RiWhatsappFill,
+} from "@remixicon/react";
+
 export const SOCIAL_LINKS = [
-  { icon: "ri-github-fill", href: "https://github.com/AkuPando", target: "_blank", rel: "noopener noreferrer", label: "GitHub" },
-  { icon: "ri-instagram-fill", href: "https://www.instagram.com/dsnchntdvan", target: "_blank", rel: "noopener noreferrer", label: "Instagram" },
-  { icon: "ri-facebook-fill", href: "https://www.facebook.com/irvanda.aldo", target: "_blank", rel: "noopener noreferrer", label: "Facebook" },
-  { icon: "ri-whatsapp-fill", href: "https://wa.me/62895323717136", target: "_blank", rel: "noopener noreferrer", label: "WhatsApp" },
+  // Old format: { icon: "ri-github-fill", ... }
+  { Icon: RiGithubFill, href: "https://github.com/AkuPando", target: "_blank", rel: "noopener noreferrer", label: "GitHub" },
+  { Icon: RiInstagramFill, href: "https://www.instagram.com/dsnchntdvan", target: "_blank", rel: "noopener noreferrer", label: "Instagram" },
+  { Icon: RiFacebookFill, href: "https://www.facebook.com/irvanda.aldo", target: "_blank", rel: "noopener noreferrer", label: "Facebook" },
+  { Icon: RiWhatsappFill, href: "https://wa.me/62895323717136", target: "_blank", rel: "noopener noreferrer", label: "WhatsApp" },
 ];
 
 // Lenis configuration

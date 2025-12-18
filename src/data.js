@@ -14,6 +14,14 @@ import Tools12 from "/assets/tools/php.png";
 import Tools13 from "/assets/tools/MySQL.png";
 import Tools14 from "/assets/tools/mariaDB.png";
 import Tools15 from "/assets/tools/Python.png";
+import {
+  RiWindowLine,
+  RiCodeSSlashLine,
+  RiLayoutLine,
+  RiSettings3Line,
+  RiServerLine,
+  RiDatabase2Line,
+} from "@remixicon/react";
 
 const Image = {
   HeroImage,
@@ -115,21 +123,24 @@ export const whatIDo = [
     title: "Perancangan Aplikasi Web",
     description:
       "Merancang arsitektur dan struktur aplikasi web yang scalable dan maintainable",
-    icon: "ri-window-line",
+    // icon: "ri-window-line", // Old: using CSS class
+    Icon: RiWindowLine,
     dad: "200",
   },
   {
     id: 2,
     title: "Pengembangan Aplikasi Web",
     description: "Membangun aplikasi web full-stack dengan efektif dan efisien",
-    icon: "ri-code-s-slash-line",
+    // icon: "ri-code-s-slash-line", // Old: using CSS class
+    Icon: RiCodeSSlashLine,
     dad: "300",
   },
   {
     id: 3,
     title: "Implementasi Antarmuka",
     description: "Mengimplementasikan UI/UX yang responsif dan user-friendly",
-    icon: "ri-layout-line",
+    // icon: "ri-layout-line", // Old: using CSS class
+    Icon: RiLayoutLine,
     dad: "400",
   },
   {
@@ -137,21 +148,24 @@ export const whatIDo = [
     title: "Maintainability",
     description:
       "Menulis kode yang bersih, terdokumentasi, dan mudah dipelihara",
-    icon: "ri-settings-3-line",
+    // icon: "ri-settings-3-line", // Old: using CSS class
+    Icon: RiSettings3Line,
     dad: "500",
   },
   {
     id: 5,
     title: "Perancangan Backend dan REST API",
     description: "Merancang dan mengembangkan backend services dan RESTful API",
-    icon: "ri-server-line",
+    // icon: "ri-server-line", // Old: using CSS class
+    Icon: RiServerLine,
     dad: "600",
   },
   {
     id: 6,
     title: "Perancangan Database",
     description: "Merancang struktur database yang optimal, efisien, dan scalable untuk kebutuhan aplikasi",
-    icon: "ri-database-2-line",
+    // icon: "ri-database-2-line", // Old: using CSS class
+    Icon: RiDatabase2Line,
     dad: "700",
   },
 ];

@@ -35,7 +35,8 @@ const Footer = () => {
                 className="w-12 h-12 flex items-center justify-center bg-zinc-800/50 hover:bg-zinc-700 rounded-lg transition-colors"
                 aria-label={social.label}
               >
-                <i className={`${social.icon} text-xl`}></i>
+              {/* Old: <i className={`${social.icon} text-xl`}></i> */}
+                <social.Icon size={20} />
               </a>
             ))}
           </div>

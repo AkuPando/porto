@@ -51,9 +51,11 @@ const WhatIDo = () => {
               data-aos-duration="1000"
               data-aos-delay={item.dad}
             >
-              <i
-                className={`${item.icon} text-4xl mb-4 block group-hover:text-[rgb(212,167,85)] transition-colors`}
-              ></i>
+              {/* Old: <i className={`${item.icon} text-4xl mb-4 block group-hover:text-[rgb(212,167,85)] transition-colors`}></i> */}
+              <item.Icon
+                size={36}
+                className="mb-4 block group-hover:text-[rgb(212,167,85)] transition-colors"
+              />
               <h4 className="font-bold text-xl mb-2">{item.title}</h4>
               <p className="opacity-70 text-sm">{item.description}</p>
             </div>

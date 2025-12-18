@@ -9,7 +9,7 @@ import { LENIS_CONFIG} from "./utils/constants";
 // Styles
 import "./index.css";
 import "./loader-animations.css";
-import "remixicon/fonts/remixicon.css";
+// import "remixicon/fonts/remixicon.css"; // Commented: using @remixicon/react instead
 import "animate.css";
 import "aos/dist/aos.css";
 
