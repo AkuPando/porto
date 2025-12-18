@@ -49,7 +49,7 @@ const Dashboard = () => {
             <div className="animate__animated animate__fadeInUp animate__delay-2_5s">
               <div className="flex items-center gap-6 justify-center lg:justify-normal lg:px-0">
                 <a
-                  href="/assets/CV_Irvando.pdf"
+                  href={`${import.meta.env.BASE_URL}assets/CV_Irvando.pdf`}
                   download="CV_Irvando_Aldo_Renaldy.pdf"
                   className="bg-zinc-800 opacity-75 p-4 rounded-2xl hover:opacity-100"
                 >

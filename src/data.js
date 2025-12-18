@@ -1,19 +1,20 @@
-import HeroImage from "/assets/gue.webp";
-import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/laravel.png";
-import Tools4 from "/assets/tools/tailwind.png";
-import Tools5 from "/assets/tools/bootstrap.png";
-import Tools6 from "/assets/tools/js.png";
-import Tools7 from "/assets/tools/github.png";
-import Tools8 from "/assets/tools/canva.png";
-import Tools9 from "/assets/tools/figma.png";
-import Tools10 from "/assets/tools/inertia.png";
-import Tools11 from "/assets/tools/vite.png";
-import Tools12 from "/assets/tools/php.png";
-import Tools13 from "/assets/tools/MySQL.png";
-import Tools14 from "/assets/tools/mariaDB.png";
-import Tools15 from "/assets/tools/Python.png";
+// Changed from "/assets/..." to relative imports for GitHub Pages compatibility
+import HeroImage from "../public/assets/gue.webp";
+import Tools1 from "../public/assets/tools/vscode.png";
+import Tools2 from "../public/assets/tools/reactjs.png";
+import Tools3 from "../public/assets/tools/laravel.png";
+import Tools4 from "../public/assets/tools/tailwind.png";
+import Tools5 from "../public/assets/tools/bootstrap.png";
+import Tools6 from "../public/assets/tools/js.png";
+import Tools7 from "../public/assets/tools/github.png";
+import Tools8 from "../public/assets/tools/canva.png";
+import Tools9 from "../public/assets/tools/figma.png";
+import Tools10 from "../public/assets/tools/inertia.png";
+import Tools11 from "../public/assets/tools/vite.png";
+import Tools12 from "../public/assets/tools/php.png";
+import Tools13 from "../public/assets/tools/MySQL.png";
+import Tools14 from "../public/assets/tools/mariaDB.png";
+import Tools15 from "../public/assets/tools/Python.png";
 import {
   RiWindowLine,
   RiCodeSSlashLine,
@@ -289,13 +290,14 @@ export const categorizedTools = [
   },
 ];
 
-import ko_team_management from "/assets/proyek/ko_team_management.webp";
-import prototype_ecolink from "/assets/proyek/prototype_ecolink.webp";
-import presensi_desa from "/assets/proyek/presensi_desa.webp";
-import jaspel_wonogiri from "/assets/proyek/jaspel_wonogiri.webp";
-import portofolio from "/assets/proyek/portofolio.webp";
-import myinven from "/assets/proyek/myinven.webp";
-import monitoring_sistem_tracking from "/assets/proyek/monitoring_sistem_tracking.webp";
+// Changed from "/assets/proyek/..." to relative imports for GitHub Pages compatibility
+import ko_team_management from "../public/assets/proyek/ko_team_management.webp";
+import prototype_ecolink from "../public/assets/proyek/prototype_ecolink.webp";
+import presensi_desa from "../public/assets/proyek/presensi_desa.webp";
+import jaspel_wonogiri from "../public/assets/proyek/jaspel_wonogiri.webp";
+import portofolio from "../public/assets/proyek/portofolio.webp";
+import myinven from "../public/assets/proyek/myinven.webp";
+import monitoring_sistem_tracking from "../public/assets/proyek/monitoring_sistem_tracking.webp";
 
 export const listProyek = [
   {
