@@ -61,7 +61,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16">
           <div
             className="space-y-8"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
             <div>
@@ -112,7 +112,7 @@ const Contact = () => {
           <form
             onSubmit={handleSubmit}
             className="space-y-6"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
             <div>
