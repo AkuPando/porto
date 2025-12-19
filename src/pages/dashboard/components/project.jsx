@@ -1,22 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import { listProyek } from "../../../data.js";
 
 const Project = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
+  const lastMoveTime = useRef(0);
 
-  const handleMouseMove = (e, cardId) => {
+  const handleMouseMove = useCallback((e, cardId) => {
+    const now = Date.now();
+    if (now - lastMoveTime.current < 16) return; // Throttle to ~60fps
+    lastMoveTime.current = now;
+    
     const rect = e.currentTarget.getBoundingClientRect();
     setMousePosition({
       x: e.clientX - rect.left,
       y: e.clientY - rect.top,
     });
     setHoveredCard(cardId);
-  };
+  }, []);
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = useCallback(() => {
     setHoveredCard(null);
-  };
+  }, []);
 
   return (
       <div className="mx-auto px-4 sm:px-10 md:pt-28 pt-24" id="project">

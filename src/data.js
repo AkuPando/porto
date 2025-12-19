@@ -30,93 +30,6 @@ const Image = {
 
 export default Image;
 
-export const listTools = [
-  {
-    id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "400",
-  },
-  {
-    id: 2,
-    gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
-    dad: "500",
-  },
-  {
-    id: 3,
-    gambar: Tools3,
-    nama: "Laravel",
-    ket: "Framework",
-    dad: "600",
-  },
-  {
-    id: 4,
-    gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
-    dad: "700",
-  },
-  {
-    id: 5,
-    gambar: Tools5,
-    nama: "Bootstrap",
-    ket: "Framework",
-    dad: "800",
-  },
-  {
-    id: 6,
-    gambar: Tools6,
-    nama: "Javascript",
-    ket: "Language",
-    dad: "900",
-  },
-  {
-    id: 7,
-    gambar: Tools7,
-    nama: "Github",
-    ket: "Repository",
-    dad: "1000",
-  },
-  {
-    id: 8,
-    gambar: Tools8,
-    nama: "Canva",
-    ket: "Design App",
-    dad: "1100",
-  },
-  {
-    id: 9,
-    gambar: Tools9,
-    nama: "Figma",
-    ket: "Design App",
-    dad: "1200",
-  },
-  {
-    id: 10,
-    gambar: Tools10,
-    nama: "Inertia JS",
-    ket: "Framework",
-    dad: "1300",
-  },
-  {
-    id: 11,
-    gambar: Tools11,
-    nama: "Vite",
-    ket: "Build Tool",
-    dad: "1400",
-  },
-  {
-    id: 12,
-    gambar: Tools12,
-    nama: "PHP",
-    ket: "Language",
-    dad: "1500",
-  },
-];
-
 // What I Do data
 export const whatIDo = [
   {
@@ -124,7 +37,6 @@ export const whatIDo = [
     title: "Perancangan Aplikasi Web",
     description:
       "Merancang arsitektur dan struktur aplikasi web yang scalable dan maintainable",
-    // icon: "ri-window-line", // Old: using CSS class
     Icon: RiWindowLine,
     dad: "200",
   },
@@ -132,7 +44,6 @@ export const whatIDo = [
     id: 2,
     title: "Pengembangan Aplikasi Web",
     description: "Membangun aplikasi web full-stack dengan efektif dan efisien",
-    // icon: "ri-code-s-slash-line", // Old: using CSS class
     Icon: RiCodeSSlashLine,
     dad: "300",
   },
@@ -140,7 +51,6 @@ export const whatIDo = [
     id: 3,
     title: "Implementasi Antarmuka",
     description: "Mengimplementasikan UI/UX yang responsif dan user-friendly",
-    // icon: "ri-layout-line", // Old: using CSS class
     Icon: RiLayoutLine,
     dad: "400",
   },
@@ -149,7 +59,6 @@ export const whatIDo = [
     title: "Maintainability",
     description:
       "Menulis kode yang bersih, terdokumentasi, dan mudah dipelihara",
-    // icon: "ri-settings-3-line", // Old: using CSS class
     Icon: RiSettings3Line,
     dad: "500",
   },
@@ -157,7 +66,6 @@ export const whatIDo = [
     id: 5,
     title: "Perancangan Backend dan REST API",
     description: "Merancang dan mengembangkan backend services dan RESTful API",
-    // icon: "ri-server-line", // Old: using CSS class
     Icon: RiServerLine,
     dad: "600",
   },
@@ -165,7 +73,6 @@ export const whatIDo = [
     id: 6,
     title: "Perancangan Database",
     description: "Merancang struktur database yang optimal, efisien, dan scalable untuk kebutuhan aplikasi",
-    // icon: "ri-database-2-line", // Old: using CSS class
     Icon: RiDatabase2Line,
     dad: "700",
   },
@@ -290,7 +197,6 @@ export const categorizedTools = [
   },
 ];
 
-// Changed from "/assets/proyek/..." to relative imports for GitHub Pages compatibility
 import ko_team_management from "../public/assets/proyek/ko_team_management.webp";
 import prototype_ecolink from "../public/assets/proyek/prototype_ecolink.webp";
 import presensi_desa from "../public/assets/proyek/presensi_desa.webp";

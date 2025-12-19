@@ -1,3 +1,11 @@
+/* Performance optimizations */
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html, body {
   overflow-x: hidden;
   height: auto;
@@ -27,6 +35,23 @@ html {
   body {
     font-family: "Poppins", sans-serif;
   }
+}
+
+/* Hardware acceleration for animated sections */
+.hero,
+.what-i-do,
+.project,
+.tools,
+.contact,
+.navbar,
+.footer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Optimize image rendering */
+img {
+  content-visibility: auto;
 }
 
 .animate__delay-2_5s {

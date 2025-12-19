@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { Link, useLocation } from "react-router-dom"; // OLD ROUTER-BASED NAVBAR - COMMENTED OUT
-// import { NAV_ITEMS} from "../utils/constants"; // OLD ROUTER-BASED NAVBAR - COMMENTED OUT
 
 const SMOOTH_NAV_ITEMS = [
   { label: "Home", to: "#home" },
@@ -14,7 +12,6 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   const [activeSection, setActiveSection] = useState("#home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  // const location = useLocation(); // OLD ROUTER-BASED NAVBAR - COMMENTED OUT
 
   useEffect(() => {
     const handleScroll = () => {

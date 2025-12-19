@@ -23,17 +23,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Construct mailto link
     const mailtoLink = `mailto:irvandaaldo666@gmail.com?subject=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
       `Nama: ${formData.name}\nEmail: ${formData.email}\n\nPesan:\n${formData.message}`
     )}`;
 
-    // Open default email client
     window.location.href = mailtoLink;
 
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -84,7 +81,6 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
-                  {/* Old: <i className="ri-mail-line text-xl"></i> */}
                   <RiMailLine size={20} />
                 </div>
                 <div>
@@ -95,7 +91,6 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
-                  {/* Old: <i className="ri-whatsapp-line text-xl"></i> */}
                   <RiWhatsappLine size={20} />
                 </div>
                 <div>
@@ -106,7 +101,6 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
-                  {/* Old: <i className="ri-map-pin-line text-xl"></i> */}
                   <RiMapPinLine size={20} />
                 </div>
                 <div>

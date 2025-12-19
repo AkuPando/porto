@@ -53,7 +53,8 @@ const Dashboard = () => {
                   download="CV_Irvando_Aldo_Renaldy.pdf"
                   className="bg-zinc-800 opacity-75 p-4 rounded-2xl hover:opacity-100"
                 >
-                  My CV{/* Old: <i className="ri-download-line ps-2 ri-lg"></i> */}<RiDownloadLine size={20} className="inline-block ms-2" />
+                  My CV
+                  <RiDownloadLine size={20} className="inline-block ms-2" />
                 </a>
                 <a
                   href="#project"
@@ -70,7 +71,6 @@ const Dashboard = () => {
                   className="bg-zinc-800 opacity-75 p-4 rounded-2xl hover:opacity-100"
                 >
                   View Projects
-                  {/* Old: <i className="ri-arrow-down-line ps-2 ri-lg"></i> */}
                   <RiArrowDownLine size={20} className="inline-block ms-2" />
                 </a>
               </div>

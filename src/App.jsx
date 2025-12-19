@@ -1,6 +1,5 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  // BrowserRouter as Router,
   HashRouter as Router,
   Routes,
   Route,
@@ -9,12 +8,7 @@ import {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PreLoader from "./components/PreLoader";
-
-// Lazy load page components
-const Dashboard = lazy(() => import("./pages/dashboard"));
-const Projects = lazy(() => import("./pages/projects"));
-const Product = lazy(() => import("./pages/product"));
-const Contact = lazy(() => import("./pages/contact"));
+import Dashboard from "./pages/dashboard";
 
 function AppContent() {
   const location = useLocation();
@@ -31,14 +25,9 @@ function AppContent() {
     <>
       <Navbar />
       {showPreLoader && <PreLoader />}
-      <Suspense fallback={null}>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/contact" element={<Contact />} />{" "}
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
       <Footer />
     </>
   );
