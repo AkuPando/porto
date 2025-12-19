@@ -1,15 +1,11 @@
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { listProyek } from "../../../data.js";
 
 const Project = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
-  const lastMoveTime = useRef(0);
 
   const handleMouseMove = useCallback((e, cardId) => {
-    const now = Date.now();
-    if (now - lastMoveTime.current < 16) return; // Throttle to ~60fps
-    lastMoveTime.current = now;
     
     const rect = e.currentTarget.getBoundingClientRect();
     setMousePosition({
