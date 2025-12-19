@@ -65,6 +65,8 @@ const Project = () => {
                   <img
                     src={proyek.gambar}
                     alt={proyek.nama}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   {hoveredCard === proyek.id && (
