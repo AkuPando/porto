@@ -23,14 +23,17 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Construct mailto link
     const mailtoLink = `mailto:irvandaaldo666@gmail.com?subject=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
       `Nama: ${formData.name}\nEmail: ${formData.email}\n\nPesan:\n${formData.message}`
     )}`;
 
+    // Open default email client
     window.location.href = mailtoLink;
 
+    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -45,7 +48,8 @@ const Contact = () => {
         <h1
           className="text-3xl sm:text-4xl md:text-5xl/tight font-bold mb-10 sm:mb-16 text-center"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="800"
+          data-aos-delay="0"
         >
           Get in{" "}
           <span className="relative inline-block">
@@ -64,7 +68,8 @@ const Contact = () => {
           <div
             className="space-y-8"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="800"
+            data-aos-delay="100"
           >
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl/tight font-bold mb-4 sm:mb-6">
@@ -81,6 +86,7 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
+                  {/* Old: <i className="ri-mail-line text-xl"></i> */}
                   <RiMailLine size={20} />
                 </div>
                 <div>
@@ -91,6 +97,7 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
+                  {/* Old: <i className="ri-whatsapp-line text-xl"></i> */}
                   <RiWhatsappLine size={20} />
                 </div>
                 <div>
@@ -101,6 +108,7 @@ const Contact = () => {
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-800 rounded-lg">
+                  {/* Old: <i className="ri-map-pin-line text-xl"></i> */}
                   <RiMapPinLine size={20} />
                 </div>
                 <div>
@@ -115,7 +123,8 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="space-y-6"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="800"
+            data-aos-delay="200"
           >
             <div>
               <label htmlFor="name" className="block mb-2 text-sm font-medium">

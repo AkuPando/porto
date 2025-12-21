@@ -1,23 +1,22 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { listProyek } from "../../../data.js";
 
 const Project = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
 
-  const handleMouseMove = useCallback((e, cardId) => {
-    
+  const handleMouseMove = (e, cardId) => {
     const rect = e.currentTarget.getBoundingClientRect();
     setMousePosition({
       x: e.clientX - rect.left,
       y: e.clientY - rect.top,
     });
     setHoveredCard(cardId);
-  }, []);
+  };
 
-  const handleMouseLeave = useCallback(() => {
+  const handleMouseLeave = () => {
     setHoveredCard(null);
-  }, []);
+  };
 
   return (
       <div className="mx-auto px-4 sm:px-10 md:pt-28 pt-24" id="project">
@@ -25,7 +24,8 @@ const Project = () => {
           <h1
             className="text-2xl sm:text-3xl md:text-4xl/snug font-bold mb-4 flex justify-center"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="800"
+            data-aos-delay="0"
           >
             <span className="relative inline-block">
               <span className="relative z-10">Project</span>
@@ -35,8 +35,8 @@ const Project = () => {
           <p
             className="text-base/loose opacity-50 flex justify-center text-center"
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
+            data-aos-duration="800"
+            data-aos-delay="100"
           >
             Beberapa project yang telah saya kerjakan
           </p>
@@ -50,8 +50,8 @@ const Project = () => {
                   transition: 'all 0.7s cubic-bezier(0.4, 0, 0.2, 1)'
                 }}
                 data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay={proyek.dad}
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <div 
                   className="overflow-hidden bg-linear-to-br from-blue-900/20 to-zinc-900 relative cursor-none"
@@ -61,8 +61,6 @@ const Project = () => {
                   <img
                     src={proyek.gambar}
                     alt={proyek.nama}
-                    loading="lazy"
-                    decoding="async"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   {hoveredCard === proyek.id && (

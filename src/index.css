@@ -49,10 +49,6 @@ html {
   backface-visibility: hidden;
 }
 
-/* Optimize image rendering */
-img {
-  content-visibility: auto;
-}
 
 .animate__delay-2_5s {
   animation-delay: 2.5s !important;

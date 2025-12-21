@@ -8,7 +8,9 @@ const WhatIDo = () => {
         <h1
           className="text-2xl sm:text-3xl md:text-4xl/snug font-bold mb-4 flex justify-center"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="800"
+          data-aos-delay="0"
+          data-aos-offset="200"
         >
           What{" "}
           <span className="relative inline-block ml-2">
@@ -25,8 +27,9 @@ const WhatIDo = () => {
         <p
           className="text-base/loose opacity-50 flex justify-center text-center max-w-2xl mx-auto"
           data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="300"
+          data-aos-duration="800"
+          data-aos-delay="100"
+          data-aos-offset="200"
         >
           Berikut adalah layanan dan keahlian yang saya tawarkan dalam
           pengembangan software
@@ -48,8 +51,9 @@ const WhatIDo = () => {
                 (e.currentTarget.style.backgroundColor = "transparent")
               }
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay={item.dad}
+              data-aos-duration="800"
+              data-aos-delay="200"
+              data-aos-offset="150"
             >
               {/* Old: <i className={`${item.icon} text-4xl mb-4 block group-hover:text-[rgb(212,167,85)] transition-colors`}></i> */}
               <item.Icon
